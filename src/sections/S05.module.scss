@@ -25,6 +25,9 @@
       align-items: center;
       font-weight: 700;
       justify-content: center;
+      @include mobile {
+        font-size: 2.5rem;
+      }
       > span {
         display: block;
         font-weight: 400;
@@ -43,6 +46,7 @@
           padding-top: 1rem;
           font-size: 1.75rem;
           @include mobile {
+            font-size: 1.5rem;
             > br {
               display: none;
             }

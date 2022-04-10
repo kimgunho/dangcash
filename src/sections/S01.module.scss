@@ -1,11 +1,16 @@
 @import "../common.scss";
 
 .container {
+  margin-top: 115px;
   background-color: $mainColor;
   padding: 8rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include mobile {
+    margin-top: 94px;
+  }
   > .limiter {
     @include limiter;
     display: flex;
@@ -20,21 +25,32 @@
       font-size: 4rem;
       text-align: center;
       font-weight: 700;
+      @include mobile {
+        font-size: 3rem;
+      }
       > span {
         display: block;
         font-size: 2rem;
         font-weight: 400;
+        @include mobile {
+          font-size: 1.5rem;
+        }
       }
     }
-    > .image {
+    > img {
       width: 100%;
-      max-width: 940px;
-      min-height: 550px;
-      background: no-repeat url("../assets/images/s01/main.png") center;
-      background-size: 100%;
 
-      @include mobile {
-        background-image: url("../assets/images/s01/main_mobile.png");
+      &.desktop {
+        max-width: 940px;
+        @include mobile {
+          display: none;
+        }
+      }
+      &.mobile {
+        display: none;
+        @include mobile {
+          display: block;
+        }
       }
     }
     > a {
@@ -47,6 +63,16 @@
       align-items: center;
       justify-content: center;
       margin-top: -4rem;
+      transition: all 0.2s ease;
+
+      &:hover {
+        background-color: white;
+        color: $mainColor;
+      }
+
+      @include mobile {
+        margin-top: 0;
+      }
     }
   }
 }

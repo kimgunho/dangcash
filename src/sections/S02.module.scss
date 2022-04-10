@@ -23,11 +23,17 @@
         text-align: center;
         line-height: normal;
         font-weight: 700;
+        @include mobile {
+          font-size: 2.5rem;
+        }
         > span {
           font-weight: 400;
           padding-top: 1rem;
           font-size: 1.75rem;
           display: block;
+          @include mobile {
+            font-size: 1.5rem;
+          }
         }
       }
 
