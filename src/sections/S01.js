@@ -1,5 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "./S01.module.scss";
+import link from "../assets/link";
 
 import deskTop_main from "../assets/images/s01/main.png";
 import mobile_main from "../assets/images/s01/main_mobile.png";
@@ -15,7 +16,7 @@ function S01() {
         </h2>
         <img className={cx("desktop")} src={deskTop_main} alt="" />
         <img className={cx("mobile")} src={mobile_main} alt="" />
-        <a href="" target={"_blank"}>
+        <a href={link} target={"_blank"} rel="noreferrer">
           카톡 산책하기
         </a>
       </div>
