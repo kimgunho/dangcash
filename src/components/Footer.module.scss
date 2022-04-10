@@ -1,0 +1,18 @@
+@import "../common.scss";
+
+footer {
+  text-align: center;
+  padding: 4rem 0;
+
+  > .companyTitle {
+    color: $mainColor;
+    font-size: 2.25rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+  }
+
+  > .copyright {
+    font-size: 13px;
+    color: #121212;
+  }
+}

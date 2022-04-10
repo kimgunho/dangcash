@@ -1,3 +1,10 @@
+$mainColor: #4dc4be;
+
+@mixin limiter {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 20px;
+}
 @mixin tablet {
   @media screen and (max-width: 1024px) {
     @content;
