@@ -1,4 +1,51 @@
 @import "../common.scss";
 
 .container {
+  background-color: #cfeded;
+  line-height: 0;
+
+  > .background {
+    padding-top: 8rem;
+    background-image: url("../assets/images/s02/background.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > .limiter {
+      @include limiter;
+
+      > h2 {
+        color: #121212;
+        font-size: 3.25rem;
+        text-align: center;
+        line-height: normal;
+        font-weight: 700;
+        > span {
+          font-weight: 400;
+          padding-top: 1rem;
+          font-size: 1.75rem;
+          display: block;
+        }
+      }
+
+      > img {
+        width: 100%;
+
+        &.desktop {
+          @include mobile {
+            display: none;
+          }
+        }
+        &.mobile {
+          display: none;
+          @include mobile {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,4 +1,53 @@
 @import "../common.scss";
 
 .container {
+  padding-top: 8rem;
+  background-image: url("../assets/images/s03/background.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  > .limiter {
+    @include limiter;
+    line-height: 0;
+
+    > h2 {
+      color: #121212;
+      font-size: 3.25rem;
+      text-align: center;
+      line-height: normal;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      > span {
+        font-weight: 400;
+        padding-top: 1rem;
+        font-size: 1.75rem;
+        display: block;
+        @include mobile {
+          > br {
+            display: none;
+          }
+        }
+      }
+    }
+
+    > img {
+      width: 100%;
+
+      &.desktop {
+        @include mobile {
+          display: none;
+        }
+      }
+      &.mobile {
+        display: none;
+        @include mobile {
+          display: block;
+        }
+      }
+    }
+  }
 }
