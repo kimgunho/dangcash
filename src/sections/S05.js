@@ -11,7 +11,9 @@ function S05() {
       <div className={cx("limiter")}>
         <h2>
           <span className={cx("mark")}>아이폰 OS</span>
-          댕캐시 빠르고 편하게 카톡에서 하는 법!
+          댕캐시 빠르고 편하게
+          <br />
+          카톡에서 하는 법!
           <span className={cx("desc")}>
             아이폰 채팅목록에서 길게 누르고 핀 고정!
           </span>
