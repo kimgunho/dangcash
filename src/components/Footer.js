@@ -8,7 +8,7 @@ function Footer() {
     <footer>
       <p className={cx("companyTitle")}>DANG CASH</p>
       <p className={cx("copyright")}>
-        서울시 서울구 서울로 123 댕캐시 Copyright by dangcash
+        서울특별시 강남구 영동대로 602, 6층 G208호
       </p>
     </footer>
   );
